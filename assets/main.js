@@ -15,10 +15,10 @@ const hour6 = $('#time6').text();
 const hour7 = $('#time7').text();
 const hour8 = $('#time8').text();
 const hour9 = $('#time9').text();
-const hour10 = $('#time10').text();
-const hour11 = $('#time11').text();
-const hour12 = $('#time12').text();
-const hour13 = $('#time13').text();
+//const hour10 = $('#time10').text();
+//const hour11 = $('#time11').text();
+//const hour12 = $('#time12').text();
+//const hour13 = $('#time13').text();
 
 const hour1Int = parseInt(hour1);
 const hour2Int = parseInt(hour2);
@@ -29,10 +29,10 @@ const hour6Int = parseInt(hour6);
 const hour7Int = parseInt(hour7);
 const hour8Int = parseInt(hour8);
 const hour9Int = parseInt(hour9);
-const hour10Int = parseInt(hour10);
-const hour11Int = parseInt(hour11);
-const hour12Int = parseInt(hour12);
-const hour13Int = parseInt(hour13);
+//const hour10Int = parseInt(hour10);
+//const hour11Int = parseInt(hour11);
+//const hour12Int = parseInt(hour12);
+//const hour13Int = parseInt(hour13);
 
 // Store user input in local Storage
 
@@ -126,49 +126,49 @@ $('#btn9').click(function() {
     localStorage.setItem(hour9, $('#text9').val());
 })
 
-$('#btn10').click(function() {
-    if ($('#text10').val()) {
-        localStorage.removeItem('text10');
-    }
+//$('#btn10').click(function() {
+//    if ($('#text10').val()) {
+//        localStorage.removeItem('text10');
+//   }
 
-    const hour10String = JSON.stringify(hour10);
+//    const hour10String = JSON.stringify(hour10);
 
-    localStorage.setItem(hour10, $('#text10').val());
-});
-
-
-$('#btn11').click(function() {
-    if ($('#text11').val()) {
-        localStorage.removeItem('text11');
-    }
-
-    const hour11String = JSON.stringify(hour11);
-
-    localStorage.setItem(hour11, $('#text11').val());
-});
-
-$('#btn12').click(function() {
-    if ($('#text12').val()) {
-        localStorage.removeItem('text12');
-    }
-
-    const hour12String = JSON.stringify(hour12);
-
-    localStorage.setItem(hour12, $('#text12').val());
-});
-
-$('#btn13').click(function() {
-    if ($('#text13').val()) {
-        localStorage.removeItem('text13');
-    }
-
-    const hour1String = JSON.stringify(hour13);
-
-    localStorage.setItem(hour13, $('#text13').val());
-});
+//    localStorage.setItem(hour10, $('#text10').val());
+//});
 
 
-$('#currentDay').append(timeNow);
+//$('#btn11').click(function() {
+//    if ($('#text11').val()) {
+//        localStorage.removeItem('text11');
+//    }
+
+//    const hour11String = JSON.stringify(hour11);
+
+//    localStorage.setItem(hour11, $('#text11').val());
+//});
+
+//$('#btn12').click(function() {
+//    if ($('#text12').val()) {
+//        localStorage.removeItem('text12');
+//    }
+
+//    const hour12String = JSON.stringify(hour12);
+
+//    localStorage.setItem(hour12, $('#text12').val());
+//});
+
+//$('#btn13').click(function() {
+//    if ($('#text13').val()) {
+//        localStorage.removeItem('text13');
+//    }
+//
+//    const hour1String = JSON.stringify(hour13);
+//
+//    localStorage.setItem(hour13, $('#text13').val());
+//});
+
+
+//$('#currentDay').append(timeNow);
 
 // Color coding to reflect whether the time slot is in the past, the present or the future 
 //why no color is display to reflect past, present and future?
