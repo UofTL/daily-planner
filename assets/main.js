@@ -1,6 +1,6 @@
 // Define all variables
 
-let timeNow = moment().format('dddd, MMMM Do YYYY');
+let timeNow = moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
 let hourNow = moment().format('h');
 let hourNow24 = parseInt(moment().format('HH'));
 let hourNowInt = parseInt(hourNow);
@@ -168,24 +168,22 @@ $('#btn13').click(function() {
 });
 
 
-// Display the time using moment.js
-
 $('#currentDay').append(timeNow);
 
 // Color coding to reflect whether the time slot is in the past, the present or the future 
+//why no color is display to reflect past, present and future?
 
 colorCoding();
 
 function colorCoding() {
 
     TIMER = setInterval(colorCoding, 1000);
-    // Test check: hourNow24 = 20;
-    if (hourNow24 >= 13 && hourNow24 <= 17) {
+    if (hourNow24 >= 9 && hourNow24 <= 17) {
 
-        for (let i = 1; i <= 13; i++) {
+        for (let i = 1; i <= 9; i++) {
             let hourInInt = parseInt($('#time' + i).text());
 
-            if (hourInInt < 13) {
+            if (hourInInt < 9) {
                 hourInInt = hourInInt + 12;
             }
 

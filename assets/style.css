@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
 body {
+    /* not sure why the background image doesn't show 
+    background-image: url('.image/image.jpg');*/
     font-family: 'Zen Loop', cursive;
     font-size: 21px;
     line-height: 1;
