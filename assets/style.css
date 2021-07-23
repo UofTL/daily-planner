@@ -1,10 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Loop:ital@1&display=swap');
 body {
-    /* not sure why the background image doesn't show 
-    background-image: url('.image/image.jpg');*/
-    font-family: 'Zen Loop', cursive;
+    /* not sure why the background image doesn't show */
+    font-family: 'Lobster', cursive;
     font-size: 21px;
     line-height: 1;
+}
+
+
+/*style header and footer with a cool image*/
+
+header {
+    background-image: url('../image/image.jpg');
+    font-family: 'Lobster', cursive;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.footer {
+    background-image: url('../image/image.jpg');
+    height: 10%;
+    border-top: solid;
+    border-top-color: #010a00;
+    border-top-width: 8px;
+}
+
+.footer-text,
+.header-text {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: #010a00;
 }
 
 textarea {
