@@ -1,4 +1,7 @@
+URL#
 
+https://uoftl.github.io/daily-planner/
+https://github.com/UofTL/daily-planner.git
 
 
 
